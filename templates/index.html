@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Blood Donation</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donation</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='./css/style.css')}}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body>
-<li><a href="{{'donation'}}">Need Blood</a></li>
-<li><a href="{{'doners'}}">Want to Be a Blood Doner</a></li>
-<li><a href="{{'all-posts'}}">All Posts</a></li>
+
+    <div class="container ">
+ <div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{url_for('static',filename='./img/img1.jpg')}}" alt="Blood-pic">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static',filename='./img/im3.png')}}" alt="Blood-pic">
+    </div>
+    <div class="carousel-item">
+      <img src="{{url_for('static',filename='./img/img1.jpg')}}" alt="Blood-pic">
+    </div>
+
+  </div>
+</div>
+
+<!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item">
+      <img src="im3.png" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="im3.png" alt="Chicago">
+    </div>
+    <div class="carousel-item">
+      <img src="im3.png" alt="Chicago">
+    </div>
+  </div>
+</div> -->
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</div>
+
+            <div class="three-column-container">
+                <div class="column ">
+                <button type="button" href="{{'donation'}}" class="btn btn-danger px-5 ">
+                    <a href="{{'doners'}}">Donate Blood <br> (রক্ত দেব )</a>
+                </button>
+                </div>
+                <div class="column ">
+                    <button type="button" href="{{'donation'}}" class="btn btn-danger px-5 " >
+                        <a href="{{'donation'}}">Need Blood <br> (রক্ত দরকার)</a>
+                    </button>
+                </div>
+                <div class=" column ">
+                    <button type="button" class="btn btn-danger px-5 " href="">
+                        <a class="link" href="">About US <br> (আমাদের সম্পর্কে )</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
 </body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
+
+
 </html>
